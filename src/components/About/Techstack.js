@@ -16,7 +16,6 @@ import {
   SiSolidity,
 } from "react-icons/si";
 import { TbBrandGolang } from "react-icons/tb";
-import { FaFlask } from "react-icons/fa"; // Added import statement for Flask icon
 
 function Techstack() {
   return (
@@ -52,16 +51,12 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <SiFirebase />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
-      </Col>
+     
  
       <Col xs={4} md={2} className="tech-icons">
         <DiJava />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <FaFlask /> {/* Flask icon */}
-      </Col>
+    
     </Row>
   );
 }
