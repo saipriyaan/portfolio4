@@ -3,6 +3,8 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
+import vinayagar from "../Assets/vinayagar.jpg";
+
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
@@ -37,6 +39,7 @@ function NavBar() {
       expand="md"
       className={navColour ? "sticky" : "navbar"}
     >
+    
       <Container>
         <Navbar.Brand href="/" className="d-flex">
           <img src={logo} className="img-fluid logo" alt="brand" />
@@ -47,18 +50,30 @@ function NavBar() {
             updateExpanded(expand ? true : "expanded");
           }}
         >
+
+
+       
+          
+       
+      
+        
           <span></span>
           <span></span>
           <span></span>
         </Navbar.Toggle>
+        
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
+         
             <Nav.Item>
+            <img src={vinayagar} className="img-fluid logo" alt="brand" />
+            </Nav.Item>
+        <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
-
+          
             <Nav.Item>
               <Nav.Link
                 as={Link}
